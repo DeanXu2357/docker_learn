@@ -16,6 +16,5 @@ RUN service apache2 restart
 VOLUME ["/var/www/html", "/etc/mysql", "/var/lib/mysql", "/etc/php"]
 
 EXPOSE 80
-EXPOSE 3306
 
 CMD ["apachectl", "-D", "FOREGROUND"] 
